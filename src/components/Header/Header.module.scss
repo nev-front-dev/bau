@@ -1,0 +1,67 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 63px;
+    padding-bottom: 24px;
+    .menuLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+            padding: 16px 24px;
+            margin-right: 8px;
+            text-decoration: none;
+            .menuLinksItem{
+                list-style: none;
+                cursor: pointer;
+                color: var(--text-main, #E5E8DF);
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 24px;
+                transition: all 0.3s;
+                img{
+                    margin-left: 10px;
+                    margin-top: 2px;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .headerRight{
+        display: flex;
+        align-items: center;
+        .dropDown{
+            display: flex;
+            align-items: center;
+            .DropDownButton{
+                .dropArrow{
+                    margin-left: 16px;
+                    margin-top: 6px;
+                    padding-top: 5px;
+                }
+            }
+        }
+        .userStatus{
+            padding: 16px 24px;
+            color: var(--accent-yellow, #E8CB3C);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+            margin-left: 36px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .Header{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
